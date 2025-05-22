@@ -1,33 +1,15 @@
-Assignment 4 - Components
-===
+# Show Tracker — React Edition
 
-Due: September 30th, by 11:59 AM.
+**Live demo:** https://a4-ezrabarb.glitch.me
 
-For this assignment you will re-implement the client side portion of *either* A2 or A3 using either React or Svelte components. If you choose A3 you only need to use components for the data display / updating; you can leave your login UI as is.
+This is a React‐based re-implementation of A2’s “Show Tracker.”  
+I broke the UI into three reusable components—  
+• **ShowTable** for displaying full/liked/disliked lists  
+• **AddShowForm** for adding new entries  
+• **EditShowForm** for rating updates and deletion  
 
-[Svelte Tutorial](https://github.com/cs-4241-2024/cs-4241-2024.github.io/blob/main/using.svelte.md)  
-[React Tutorial](https://github.com/cs-4241-2024/cs-4241-2024.github.io/blob/main/using.react.md)  
+**What changed from A3?**  
+I moved from vanilla JS & direct DOM manipulation to React hooks and component props. Data fetching and state-management are now centralized in `App.js`.
 
-This project can be implemented on any hosting service (Glitch, DigitalOcean, Heroku etc.), however, you must include all files in your GitHub repo so that the course staff can view them.
-
-Deliverables
----
-
-Do the following to complete this assignment:
-
-1. Implement your project with the above requirements.
-3. Test your project to make sure that when someone goes to your main page on Glitch/Heroku/etc., it displays correctly.
-4. Ensure that your project has the proper naming scheme `a4-firstname-lastname` so we can find it.
-5. Fork this repository and modify the README to the specifications below. Be sure to add *all* project files.
-6. Create and submit a Pull Request to the original repo. Name the pull request using the following template: `a4-firstname-lastname`.
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-## Your Web Application Title
-
-your hosting link e.g. http://a4-charlieroberts.glitch.me
-
-Include a very brief summary of your project here and what you changed / added to assignment #3. Briefly (3–4 sentences) answer the following question: did the new technology improve or hinder the development experience?
-
-Unlike previous assignments, this assignment will be solely graded on whether or not you successfully complete it. Partial credit will be generously given.
+**Did React improve the experience?**  
+Absolutely — breaking the UI into components made the code more modular and easier to maintain. The development feedback loop (hot reloads, JSX syntax) was a clear win over manual DOM updating.
